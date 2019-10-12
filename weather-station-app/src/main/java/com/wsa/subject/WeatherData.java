@@ -1,17 +1,15 @@
-package com.wsa.service;
+package com.wsa.subject;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import com.wsa.observer.Observer;
-import com.wsa.subject.Subject;
 
 public class WeatherData implements Subject {
 
-	List<Observer> observers;
-	float temp;
-	float humidity;
-	float pressure;
+	private ArrayList<Observer> observers;
+	private float temp;
+	private float humidity;
+	private float pressure;
 
 	public WeatherData() {
 		this.observers = new ArrayList<Observer>();
@@ -31,6 +29,7 @@ public class WeatherData implements Subject {
 	@Override
 	public void registerObserver(Observer o) {
 		this.observers.add(o);
+		System.out.println("Observer registered: " + o.toString());
 	}
 
 	@Override
@@ -42,6 +41,7 @@ public class WeatherData implements Subject {
 	}
 
 	public void measurementsChanged() {
+		System.out.println("Measurements updated.");
 		notifyObservers();
 	}
 
