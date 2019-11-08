@@ -6,11 +6,12 @@ import com.component.decorator.CondimentDecorator;
 public class Milk extends CondimentDecorator {
 
 	public Beverage beverage;
-	
+
 	public Milk(Beverage beverage) {
 		this.beverage = beverage;
+		this.size = beverage.getSize();
 	}
-	
+
 	@Override
 	public String getDescription() {
 		return beverage.getDescription() + " Milk";
@@ -18,8 +19,20 @@ public class Milk extends CondimentDecorator {
 
 	@Override
 	public double cost() {
-		return beverage.cost() + 0.10;
-	}
+		double milkCost = 0;
+		switch (beverage.getSize()) {
+		case "medium":
+			milkCost = .10;
+			break;
 
+		case "large":
+			milkCost = .15;
+			break;
+
+		default:
+			break;
+		}
+		return beverage.cost() + milkCost;
+	}
 
 }

@@ -11,16 +11,18 @@ public class CoffeeMaker {
 
 	public static void main(String[] args) {
 
-		Beverage espresso = new DarkRoast();
+		Beverage espresso = new DarkRoast("medium");
 		espresso = new Milk(espresso);
 		espresso = new Mocha(espresso);
 
-		System.out.println("Beverage type: " + espresso.getDescription() + " Beverage cost: " + espresso.cost());
+		System.out.println("Beverage : " + espresso.getSize() + " " + espresso.getDescription() + " Beverage cost: "
+				+ espresso.cost());
 
-		Beverage decaf = new Decaf();
+		Beverage decaf = new Decaf("large");
 		decaf = new Milk(decaf);
 		decaf = new Whip(decaf);
 
-		System.out.println("Beverage type: " + decaf.getDescription() + " Beverage cost: " + decaf.cost());
+		System.out.println(
+				"Beverage : " + decaf.getSize() + " " + decaf.getDescription() + " Beverage cost: " + decaf.cost());
 	}
 }

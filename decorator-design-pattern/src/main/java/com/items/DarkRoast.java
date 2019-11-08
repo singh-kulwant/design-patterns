@@ -4,9 +4,11 @@ import com.component.Beverage;
 
 public class DarkRoast  extends Beverage{
 
-	public DarkRoast() {
+	public DarkRoast(String orderSize) {
 		description = "Darkroast";
+		this.size = orderSize;
 	}
+	
 	@Override
 	public double cost() {
 		return 1.99;

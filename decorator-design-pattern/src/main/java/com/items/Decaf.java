@@ -4,8 +4,9 @@ import com.component.Beverage;
 
 public class Decaf extends Beverage {
 
-	public Decaf() {
+	public Decaf(String orderSize) {
 		description = "Decaf";
+		size = orderSize;
 	}
 
 	@Override
