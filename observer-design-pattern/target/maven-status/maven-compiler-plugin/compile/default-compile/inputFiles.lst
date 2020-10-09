@@ -1,0 +1,8 @@
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/subject/Subject.java
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/app/WeatherStationApp.java
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/display/StatisticsDisplay.java
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/display/DisplayElement.java
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/display/ForecastDisplay.java
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/display/CurrentConditionDisplay.java
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/observer/Observer.java
+/home/kulwant/repositories/design-patterns/observer-design-pattern/src/main/java/com/subject/WeatherData.java

@@ -1,0 +1,8 @@
+com/display/ForecastDisplay.class
+com/app/WeatherStationApp.class
+com/display/StatisticsDisplay.class
+com/subject/Subject.class
+com/display/CurrentConditionDisplay.class
+com/observer/Observer.class
+com/subject/WeatherData.class
+com/display/DisplayElement.class

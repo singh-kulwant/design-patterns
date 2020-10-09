@@ -7,7 +7,7 @@ import java.io.InputStream;
 
 public class InputTest {
 
-	public static void main(String[] args) throws IOException {
+/*	public static void main(String[] args) throws IOException {
 		int c;
 		InputStream in = new AutoCapitalization(
 				new BufferedInputStream(new FileInputStream("src/main/resources/input.txt")));
@@ -22,5 +22,5 @@ public class InputTest {
 		} finally {
 			in.close();
 		}
-	}
+	}*/
 }
