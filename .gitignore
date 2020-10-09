@@ -1,10 +1,9 @@
 .project
 .idea
 .settings
-.iml
+*.iml
 # Compiled class file
 *.class
-
 # Log file
 *.log
 
